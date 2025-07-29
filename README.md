@@ -27,14 +27,14 @@ A sleek iOS app built with SwiftUI to help users track their LeetCode progress, 
 
 ## 📸 Screenshots
 
-```markdown
-![Dashboard](./Assets/DashboardView)
-![Progress](./Assets/ProgressView)
-![Problem ](./Assets/ProblemDetailView)
-![Settings](./Assets/SettingsView)
-![Profile](./Assets/ProfileView)
+<p float="left">
+  <img src="LeetTrack/Assets.xcassets/ DashboardView.imageset/Screenshot 2025-07-30 at 1.51.31 AM.png" width="200" />
+    <img src="LeetTrack/Assets.xcassets/ProblemDetail.imageset/Screenshot 2025-07-30 at 2.23.50 AM.png" width="200" />
+  <img src="LeetTrack/Assets.xcassets/ProgressView.imageset/Screenshot 2025-07-30 at 1.51.56 AM.png" width="200" />
 
-```
+   <img src="LeetTrack/Assets.xcassets/SettingsView.imageset/Screenshot 2025-07-30 at 1.52.08 AM.png" width="200" />
+    <img src="LeetTrack/Assets.xcassets/ProfileView.imageset/Screenshot 2025-07-30 at 1.52.18 AM.png" width="200" />  
+</p>
 
 💻 Setup Instructions
 
