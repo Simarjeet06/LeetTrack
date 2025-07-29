@@ -57,7 +57,7 @@ Due to LeetCode’s lack of public API, the app currently uses GraphQL endpoints
 Built with ❤️ by Simarjeet Kaur
 Feel free to connect on 
 
-📬 [LinkedIn](https://www.linkedin.com/in/simar-kaur)
+📬 [LinkedIn](https://www.linkedin.com/in/simarjeet-kaur-b50462249/)
 
 or star this repo if you liked it ⭐
 
