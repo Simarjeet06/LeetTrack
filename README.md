@@ -1,17 +1,63 @@
-# LeetTrack 📱
+# 💻 LeetTrack
 
-An iOS app built with Swift and Xcode to help you track and manage coding problems.
+A sleek iOS app built with SwiftUI to help users track their LeetCode progress, visualize their performance, and stay consistent with problem-solving.
 
-## 🚀 Current Features
+---
 
-- **Scan Problems:** Use the built‑in scanner to quickly log problem IDs.  
-- **Categorize:** Mark each problem as “To Do,” “In Progress,” or “Solved.”  
-- **Search:** Filter your problem list by title or status.  
-- **Statistics:** View simple counts of how many problems are in each category.  
+## ✨ Features
 
-## 📦 Installation
+- 📊 Dashboard with real-time user progress
+- 🧠 Recommended problems to solve daily
+- 📅 Streaks tracking and recently solved problems
+- 📈 Visual progress charts
+- ⚙️ Settings with dark mode toggle
+- 👤 Profile section with account details
 
-1. Clone the repo  
-   ```bash
-   git clone git@github.com:Simarjeet06/LeetTrack.git
+---
+
+## 🚀 Technologies Used
+
+- SwiftUI
+- Combine
+- Async/Await
+- LeetCode GraphQL API
+- MVVM Architecture
+
+---
+
+## 📸 Screenshots
+
+```markdown
+![Dashboard](./Assets/DashboardView)
+![Progress](./Assets/ProgressView)
+![Problem ](./Assets/ProblemDetailView)
+![Settings](./Assets/SettingsView)
+![Profile](./Assets/ProfileView)
+
+```
+
+💻 Setup Instructions
+
+
+
+Clone the Repository
+-git clone https://github.com/Simarjeet06/LeetTrack.git
+
+
+🔐 LeetCode Integration Note
+Due to LeetCode’s lack of public API, the app currently uses GraphQL endpoints. If those fail due to server-side issues, fallback scraping can be integrated as a future enhancement.
+
+##📌 Future Improvements
+
+-Push notifications for daily challenge reminders
+-Offline data caching
+-User authentication and personalization
+
+🙌 Credits
+Built with ❤️ by Simarjeet Kaur
+Feel free to connect on 
+
+📬 [LinkedIn](https://www.linkedin.com/in/simar-kaur)
+
+or star this repo if you liked it ⭐
 
