@@ -22,7 +22,7 @@
 //
 //struct LeetCodeData: Codable {
 //    let matchedUser: MatchedUser
-//}
+// }
 //
 //struct MatchedUser: Codable {
 //    let recentSubmissionList: [Submission]
