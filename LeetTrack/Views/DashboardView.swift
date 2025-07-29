@@ -27,7 +27,7 @@ struct DashboardView: View {
                 ProgressView("Fetching problems...")
                     .padding(.top)
             } else {
-                List(viewModel.recentProblems, id: \.title) { problem in
+                List(viewModel.recentProblems) { problem in
                     VStack(alignment: .leading) {
                         Text(problem.title)
                             .font(.headline)

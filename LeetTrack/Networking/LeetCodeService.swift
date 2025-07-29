@@ -37,15 +37,16 @@ class LeetCodeService {
         let url = URL(string: "https://leetcode.com/graphql/")!
         
         let query = """
-    {
-      recentSubmissions(username: "\(username)") {
-        title
-        timestamp
-        status
-      }
-    }
-    """
-        
+        query {
+          recentSubmissionList(username: "\(username)") {
+            title
+            timestamp
+            status
+          }
+        }
+        """
+
+
         let json: [String: Any] = ["query": query]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -57,10 +58,13 @@ class LeetCodeService {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
+                print(String(data: data, encoding: .utf8) ?? "Invalid JSON")
                 do {
                     let decoded = try JSONDecoder().decode(GraphQLResponse.self, from: data)
                     DispatchQueue.main.async {
-                        completion(decoded.data.recentSubmissions)
+                        completion(decoded.data.recentSubmissionList)
+                      
+
                     }
                 } catch {
                     print("Decoding error:", error)

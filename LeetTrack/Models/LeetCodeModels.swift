@@ -34,13 +34,14 @@ struct GraphQLResponse: Decodable {
 }
 
 struct SubmissionData: Decodable {
-    let recentSubmissions: [Submission]
+    let recentSubmissionList: [Submission]
 }
 
-struct Submission:  Decodable {
-//    let id = UUID() // Needed for ForEach
-    let title: String
-    let timestamp: String
-    let status: String
-}
+    
+    struct Submission: Identifiable, Decodable {
+        let title: String
+        let timestamp: String
+        let status: Int
+        var id: UUID { UUID() } // computed property, not decoded
+    }
 
